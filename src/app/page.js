@@ -199,7 +199,7 @@ Delhi's premium multi-brand repair workshop. Our master technicians specialize i
       style={{touchAction: "none"}}
       onMouseDown={handleMouseDown} 
       onTouchMove={handleTouchMove}
-  className="h-5 w-7  -ml-3.5 rounded-s-full rounded-e-full absolute top-1/2 -mt-2.5 shadow-2xl bg-black cursor-pointer flex items-center justify-center">
+  className="h-5 w-7  -ml-3.5 rounded-s-full rounded-e-full absolute top-1/2 -mt-2.5 shadow-2xl bg-amber-600 cursor-pointer flex items-center justify-center">
    <ArrowRightLeftIcon className="h-4 w-4 text-white " />
   </div>
   

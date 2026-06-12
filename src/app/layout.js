@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "ChipsetFix",
     images: [
       {
-        url: "https://chipsetfix.com/macBook.webp", // Ya jo bhi aapki image ho
+        url: "https://chipsetfix.com/images/macBook.webp", // Ya jo bhi aapki image ho
         width: 1200,
         height: 630,
       },

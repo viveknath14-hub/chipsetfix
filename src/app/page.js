@@ -598,7 +598,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
         <h4 className="text-[14px] font-semibold tracking-wider uppercase text-[#1d1d1f] sm:text-[12px] text-amber-600">
           Get In Touch
         </h4>
-        <div className="space-y-3 w-full">
+        <div className="flex flex-col items-start space-y-3 w-fit mx-auto md:mx-0 text-left">
           {/* Phone (Triggers Phone Dialer) */}
           <a 
             href="tel:+919876543210" 
@@ -614,7 +614,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
             className="flex items-center justify-center md:justify-start gap-2.5 text-[15px] text-black transition-colors group"
           >
             <span className="text-lg group-hover:scale-110 transition-transform text-amber-600"><MailIcon /></span>
-            <span className="font-normal  hover:decoration-amber-600">support@ChipsetFix.in</span>
+            <span className="font-normal  hover:decoration-amber-600">viveknath14@gmail.com</span>
           </a>
 
           {/* Address Link (Triggers Directions on Maps) */}

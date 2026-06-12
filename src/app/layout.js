@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "ChipsetFix",
     images: [
       {
-        url: "https://chipsetfix.com/images/macBook.webp", // Ya jo bhi aapki image ho
+        url: "https://chipsetfix.com/images/macBook.webp", // image for open graph
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'ChipsetFix | Premium Hardware Diagnostics & Repair',
     description: 'Delhi’s premium multi-brand repair workshop.',
-    images: ['https://chipsetfix.com/macBook.webp'], // Aapka logo
+    images: ['https://chipsetfix.com/macBook.webp'], // logo
   }
 };
 

@@ -112,7 +112,46 @@ const scrollToBooking = () => {
 
 const [isSubmitted, setIsSubmitted] = useState(false);
 
+
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ChipsetFix",
+    "image": "https://chipsetfix.com/images/macBook.webp", 
+    "@id": "https://chipsetfix.com", // unique identifier (usually the website URL)
+    "url": "https://chipsetfix.com", // website URL
+    "telephone": "+919654311631", // number
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rohini", // Apna exact shop address
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110085",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "19:00"
+    },
+    
+  };
+
   return (
+
+<>
+      {/* SEO Schema Injection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+     
+
 <main className="min-h-screen bg-[#f5f5f7] text-[#1d1d1f] antialiased flex flex-col items-stretch items-center justify-center font-sans selection:bg-amber-200">
     
     {/* Navbar*/}
@@ -658,7 +697,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
 
 
 </main>
-  
+   </>
   
   );
 }

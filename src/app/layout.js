@@ -33,7 +33,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'ChipsetFix | Premium Hardware Diagnostics & Repair',
     description: 'Delhi’s premium multi-brand repair workshop.',
-    images: ['https://chipsetfix.com/macBook.webp'], // logo
+    images: ['https://chipsetfix.com/images/macBook.webp'], // logo
   }
 };
 

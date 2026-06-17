@@ -157,7 +157,7 @@ const [isSubmitted, setIsSubmitted] = useState(false);
     
     {/* Navbar*/}
     <nav className="sticky top-0 z-50 w-full border-b border-black/[0.08] bg-[#f5f5f7]/80 backdrop-blur-md">
-      <div className="mx-auto grid grid-cols-3 h-[64px] items-center px-6 max-w-6xl">
+      <div className="mx-auto flex h-[64px] items-center justify-between px-4 sm:px-6 md:grid md:grid-cols-3 max-w-6xl">
         <div className="flex items-center gap-2 select-none">
           <span className="text-[20px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">
             ChipsetFix<span className="text-amber-600 font-bold">.</span>
@@ -165,7 +165,7 @@ const [isSubmitted, setIsSubmitted] = useState(false);
         </div>
 
 {/* 2. CENTER COLUMN: Elegant Apple-style Business Card Link */}
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center">
             <Link
               href="/card"
               className="text-[16px] font-medium tracking-[-0.01em] text-amber-600 transition-all duration-200 flex items-center gap-1.5 active:scale-95 "
@@ -178,13 +178,13 @@ const [isSubmitted, setIsSubmitted] = useState(false);
         <div className="flex flex-col items-end gap-0.5 animate-pulse md:animate-pulse hover:transition-none hover:animate-none active:scale-[0.96] active:opacity-90">
           <a 
             href="tel:+919654311631" 
-            className="group bg-amber-600 hover:bg-amber-500 text-white text-[13px] font-normal tracking-[-0.01em] px-[16px] py-[7px] rounded-full transition-all duration-200 shadow-sm flex items-center gap-1.5 active:scale-95"
+            className="group bg-amber-600 hover:bg-amber-500 text-white text-[12px] sm:text-[13px] font-normal tracking-[-0.01em] px-[12px] py-[6px] sm:px-[16px] sm:py-[7px] rounded-full transition-all duration-200 shadow-sm flex items-center gap-1.5 active:scale-95"
           >
            <PhoneCallIcon className="w-3.5 h-3.5 transition-transform group-hover:rotate-12 " />
             Call Now
             
           </a>
-          <span className="text-[10px] font-medium tracking-wider text-black font-mono select-all px-1">
+          <span className="text-[9px] sm:text-[10px] font-medium tracking-wider text-black font-mono select-all px-1">
             +91 9654311631
           </span>
         </div>

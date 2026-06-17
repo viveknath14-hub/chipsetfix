@@ -168,7 +168,7 @@ const [isSubmitted, setIsSubmitted] = useState(false);
           <div className="flex justify-center items-center">
             <Link
               href="/card"
-              className="text-[16px] font-medium tracking-[-0.01em] text-amber-600 transition-all duration-200 flex items-center gap-1.5 active:scale-95 "
+              className="text-[14px] md:text-[16px] font-medium tracking-[-0.01em] text-amber-600 transition-all duration-200 flex items-center gap-1.5 active:scale-95 "
             >
               <i className="fa-regular fa-id-card text-amber-600"></i>
               Business Card

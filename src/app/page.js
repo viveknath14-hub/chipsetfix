@@ -1,6 +1,7 @@
 "use client";
 import { ArrowLeft, ArrowRightLeftIcon, LocateFixedIcon, LocateIcon, LocationEditIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { useState, useRef } from "react";
 
@@ -156,12 +157,24 @@ const [isSubmitted, setIsSubmitted] = useState(false);
     
     {/* Navbar*/}
     <nav className="sticky top-0 z-50 w-full border-b border-black/[0.08] bg-[#f5f5f7]/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl h-[64px] items-center justify-between px-6">
+      <div className="mx-auto grid grid-cols-3 h-[64px] items-center px-6 max-w-6xl">
         <div className="flex items-center gap-2 select-none">
           <span className="text-[20px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">
             ChipsetFix<span className="text-amber-600 font-bold">.</span>
           </span>
         </div>
+
+{/* 2. CENTER COLUMN: Elegant Apple-style Business Card Link */}
+          <div className="flex justify-center">
+            <Link
+              href="/card"
+              className="text-[16px] font-medium tracking-[-0.01em] text-amber-600 transition-all duration-200 flex items-center gap-1.5 active:scale-95 "
+            >
+              <i className="fa-regular fa-id-card text-amber-600"></i>
+              Business Card
+            </Link>
+          </div>
+
         <div className="flex flex-col items-end gap-0.5 animate-pulse md:animate-pulse hover:transition-none hover:animate-none active:scale-[0.96] active:opacity-90">
           <a 
             href="tel:+919654311631" 

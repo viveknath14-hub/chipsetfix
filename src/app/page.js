@@ -1,5 +1,6 @@
 "use client";
-import { ArrowLeft, ArrowRightLeftIcon, LocateFixedIcon, LocateIcon, LocationEditIcon, MailIcon, PhoneCallIcon } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { ArrowLeft, ArrowRightLeftIcon, IdCardIcon, LocateFixedIcon, LocateIcon, LocationEditIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -170,7 +171,7 @@ const [isSubmitted, setIsSubmitted] = useState(false);
               href="/card"
               className="text-[14px] md:text-[16px] font-medium tracking-[-0.01em] text-amber-600 transition-all duration-200 flex items-center gap-1.5 active:scale-95 "
             >
-              <i className="fa-regular fa-id-card text-amber-600"></i>
+              <IdCardIcon  className="w-6 h-6 !hidden sm:!inline-block"/>
               Business Card
             </Link>
           </div>

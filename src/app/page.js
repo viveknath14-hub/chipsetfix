@@ -203,13 +203,13 @@ const [isSubmitted, setIsSubmitted] = useState(false);
     PREMIUM DEVICE CARE
   </p>
   
-  <h1 className="text-[40px] md:text-[48px] font-semibold tracking-[-0.022em] leading-[1.1] text-[#1d1d1f] md:text-left text-center">
-    Hardware Diagnostics & Repair. <br />
-    <span className="text-black">Expert restoration</span>
-  </h1>
+ <h1 className="text-[32px] sm:text-[40px] md:text-[56px] font-semibold tracking-[-0.025em] text-[#1d1d1f] leading-[1.15] text-center md:text-start max-w-4xl mx-auto">
+Device Diagnostics & Repair.<br/>
+  <span className="text-amber-600 block md:text-[50px]">Expert Chip-Level Fix.</span>
+</h1>
   
   <p className="text-[17px] text-black leading-[1.5] tracking-[-0.011em] font-normal max-w-[420px] md:text-left text-center">
-Delhi's premium multi-brand repair workshop. Our master technicians specialize in high-precision chip-level micro-soldering, display lamination, and logic board recovery.  </p>
+Delhi's premium multi-brand repair workshop for laptops, mobiles and other electronic devices. Our master technicians specialize in high-precision chip-level micro-soldering, display lamination, and logic board recovery.  </p>
   
   <div className="pt-4 flex w-full md:justify-start justify-center">
     {/* ONCLICK ADDED HERE FOR SMOOTH SCROLL */}

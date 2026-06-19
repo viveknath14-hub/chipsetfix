@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ChipsetFix - Expert Device Repair in Rohini, Delhi",
-  description: "ChipsetFix is your trusted local repair shop in Rohini, Delhi, specializing in expert hardware diagnostics and repairs for iPhones, MacBooks, and other devices. With a commitment to quality, we use genuine parts and offer same-day service to get your tech back in action quickly. Visit us for reliable repairs and exceptional customer care.",
+  title: "ChipsetFix - Expert Laptop, Mobile & Electronic Device Repair in Rohini, Delhi",
+  description: "ChipsetFix is a trusted repair center in Rohini, Delhi, offering expert diagnostics and repair services for laptops, mobile phones, and other electronic devices. We use genuine parts and provide fast, same-day service to ensure your devices are back in action as quickly as possible. Experience reliable repairs and outstanding customer support with ChipsetFix.",
   openGraph: {
-    title: "ChipsetFix - Expert Device Repair in Rohini",
-    description: "Delhi's premium multi-brand repair workshop specializing in chip-level micro-soldering.",
+    title: "ChipsetFix - Expert Laptop, Mobile & Electronic Device Repair in Rohini, Delhi",
+    description: "Delhi's premium multi-brand laptops, mobiles and other electronic devices repair workshop specializing in chip-level micro-soldering.",
     url: "https://chipsetfix.com",
     siteName: "ChipsetFix",
     images: [
@@ -35,8 +35,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ChipsetFix | Premium Hardware Diagnostics & Repair',
-    description: 'Delhi’s premium multi-brand repair workshop.',
+    title: 'ChipsetFix | Premium Laptop, Mobile & Electronic Device Repair in Rohini',
+    description: 'Delhi’s premium multi-brand laptops, mobiles and other electronic devices repair workshop.',
     images: ['https://chipsetfix.com/images/macBook.webp'], // logo
   }
 };
@@ -51,10 +51,10 @@ export default function RootLayout({ children }) {
     >
        <head>
         {/* FontAwesome Link inside layout's <head> */}
-        <link 
-          rel="stylesheet" 
-          href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)" 
-        />
+       <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+/>
       </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>

@@ -1,6 +1,6 @@
 "use client";
-import { Card } from "@/components/ui/card";
-import { ArrowLeft, ArrowRightLeftIcon, IdCardIcon, LocateFixedIcon, LocateIcon, LocationEditIcon, MailIcon, PhoneCallIcon } from "lucide-react";
+
+import { ArrowLeft, ArrowRightLeftIcon, IdCardIcon, LocationEditIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -226,14 +226,14 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
    <div ref={imageContainer} 
    className=" w-fit max-w-lg mx-auto mt-0  bg-amber-100 overflow-hidden rounded-lg relative select-none">
      
-  <Image src="/images/iphoneD.jpg"
+  <Image src="/images/iphoneD.avif"
   alt="Image slide compare just for decorative purposes"
   width={200}
   height={200}
   loading="eager"
   className="w-auto h-auto mx-auto contrast-125 pointer-events-none"
   />
-  <Image src="/images/iphoneR.jpg"
+  <Image src="/images/iphoneR.avif"
   alt="Image slide compare just for decorative purposes"
   width={200}
   height={200}
@@ -281,9 +281,15 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
     
     {/* 1. NEW CARD: CHIPSET LEVEL REPAIR */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
-      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden">
-        <img src="images/microSoldering.webp" alt="Chipset Repair microSoldering" className="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105" />
-      </div>
+      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
+ <Image
+    src="/images/microSoldering.webp"
+    alt="Chipset Repair microSoldering"
+    fill
+    sizes="(max-width: 768px) 100vw, 33vw"
+    className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
+  />      
+  </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
         <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">
           Chipset Level Repair for All Devices
@@ -296,9 +302,14 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
 
     {/* 2. Mobile Repair */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
-      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden">
-        <img src="images/phoneRepair.webp" alt="Mobile Repair" className="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105" />
-      </div>
+      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
+<Image
+    src="/images/phoneRepair.webp"
+    alt="Mobile repair"
+    fill
+    sizes="(max-width: 768px) 100vw, 33vw"
+    className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
+  />          </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
         <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">Smartphone Restoration</h3>
         <p className="text-[14px] text-black leading-[1.4]">From cracked outer glass layer calibration to precise OLED replacements and battery health diagnostics.</p>
@@ -307,8 +318,14 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
 
     {/* 3. Laptop Repair */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
-      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden">
-        <img src="images/macBook.webp" alt="Laptop Repair" className="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105" />
+      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
+        <Image
+          src="/images/macBook.webp"
+          alt="Laptop Repair"
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
         <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">Laptop & MacBook Care</h3>
@@ -318,8 +335,14 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
 
     {/* 4. LED TV Repair */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
-      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden">
-        <img src="images/led.webp" alt="LED TV Repair" className="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105" />
+      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
+        <Image
+          src="/images/led.webp"
+          alt="LED TV Repair"
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
         <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">LED & 4K TV Diagnostics</h3>
@@ -329,8 +352,14 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
 
     {/* 5. Mirrorless Camera Repair */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
-      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden">
-        <img src="images/camera.webp" alt="Camera Repair" className="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105" />
+      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
+        <Image
+          src="/images/camera.webp"
+          alt="Camera Repair"
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
         <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">Mirrorless Camera Service</h3>
@@ -340,8 +369,14 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
 
     {/* 6. CCTV Repair */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
-      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden">
-        <img src="images/cctvRepair.webp" alt="CCTV Repair" className="w-full h-full object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105" />
+      <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
+        <Image
+          src="/images/cctvRepair.webp"
+          alt="CCTV Repair"
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
+        />
       </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
         <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">CCTV & Surveillance Audit</h3>
@@ -656,6 +691,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
           
           {/* Interactive Google Map Iframe Layer */}
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55972.66616703733!2d77.05156315910563!3d28.740708463568865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d013a47a1803d%3A0xedfb8cc477815e2f!2sRohini%2C%20Delhi!5e0!3m2!1sen!2sin!4v1781202877260!5m2!1sen!2sin"
+           title="ChipsetFix location map"
            width="600"
             height="450" 
             style={{"border": "0"}} 

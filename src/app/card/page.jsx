@@ -43,7 +43,12 @@ export default function CardPage() {
         {/* Action Controls Group */}
         <div className="flex flex-col gap-[8px] sm:gap-[10px] md:gap-[12px] mb-[14px] sm:mb-[16px] md:mb-[20px]">
           {/* Call Button */}
-          <a href="tel:+919654311631" className="flex items-center p-[10px_14px] sm:p-[12px_16px] md:p-[13px_20px] bg-white/[0.08] border border-white/[0.15] rounded-[10px] md:rounded-[12px] text-white no-underline text-[12.5px] sm:text-[13.5px] md:text-[14.5px] font-semibold transition-all duration-200 hover:bg-white/[0.14] hover:border-[#ffb703] hover:-translate-y-[1px]">
+          <a href="tel:+919654311631" onClick={() => {
+          window.dataLayer = window.dataLayer || [];
+           window.dataLayer.push({
+            event: "business_card_call",
+                     });
+            }} className="flex items-center p-[10px_14px] sm:p-[12px_16px] md:p-[13px_20px] bg-white/[0.08] border border-white/[0.15] rounded-[10px] md:rounded-[12px] text-white no-underline text-[12.5px] sm:text-[13.5px] md:text-[14.5px] font-semibold transition-all duration-200 hover:bg-white/[0.14] hover:border-[#ffb703] hover:-translate-y-[1px]">
             <i className="fa-solid fa-phone text-[14px] sm:text-[16px] md:text-[18px] mr-[10px] sm:mr-[12px] w-[16px] md:w-[18px] text-center text-[#00d2ff]"></i>
             <span>Call: +91 9654311631</span>
           </a>

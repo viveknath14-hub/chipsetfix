@@ -1,8 +1,11 @@
 // src/app/card/page.js
 import React from 'react';
-
+import CardViewTracker from './CardViewTracker';
 export default function CardPage() {
   return (
+
+    <>
+    <CardViewTracker />
     <div 
       className="flex justify-center items-center min-h-screen w-full px-[15px] py-[15px] bg-no-repeat bg-center bg-cover relative overflow-hidden"
       style={{
@@ -82,5 +85,6 @@ export default function CardPage() {
 
       </div>
     </div>
+    </>
   );
 }

@@ -85,6 +85,11 @@ const handleWhatsAppSubmit = () => {
     return;
   }
 
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "whatsapp_form_submit",
+  });
+
   // My number for whatsapp with country code
   const myWhatsAppNumber = "919654311631"; // 
 

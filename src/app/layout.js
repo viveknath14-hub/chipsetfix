@@ -1,8 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-
-
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -50,7 +48,14 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
        
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">{children}
+        
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-P60WD746TE"></Script>
+        <Script id="google-analytics">{`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P60WD746TE');`}</Script>
+      </body>
     </html>
   );
 }

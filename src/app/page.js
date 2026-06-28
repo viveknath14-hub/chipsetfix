@@ -94,7 +94,7 @@ const handleWhatsAppSubmit = () => {
   const myWhatsAppNumber = "919654311631"; // 
 
   // Message template with form data interpolation
-  const message = ` * New Repair Enquiry - ChipsetFix* \n\n` +
+  const message = ` * New repair Enquiry - ChipsetFix* \n\n` +
                   ` *Name:* ${formData.name}\n` +
                   ` *Phone:* ${formData.phone}\n` +
                   ` *Device Model:* ${formData.model}\n\n` +
@@ -210,7 +210,7 @@ const [isSubmitted, setIsSubmitted] = useState(false);
   </p>
   
  <h1 className="text-[32px] sm:text-[40px] md:text-[56px] font-semibold tracking-[-0.025em] text-[#1d1d1f] leading-[1.15] text-center md:text-start max-w-4xl mx-auto">
-Device Diagnostics & Repair.<br/>
+Device Diagnostics & restorations.<br/>
   <span className="text-amber-600 block md:text-[50px]">Expert Chip-Level Fix.</span>
 </h1>
   
@@ -223,7 +223,7 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
       onClick={scrollToBooking}
       className="bg-amber-600 hover:bg-amber-500 cursor-pointer text-white text-[14px] font-normal tracking-[-0.015em] px-[21px] py-[11px] rounded-full transition-all duration-200 animate-pulse"
     >
-      Book a Repair
+      Book a repair
     </button>
   </div>
 </div>
@@ -277,19 +277,19 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
       OUR SPECIALIZED WORKSHOP
     </p>
     <h2 className="text-[28px] sm:text-[36px] font-semibold tracking-[-0.022em] text-[#1d1d1f]">
-      Expert restoration <br className="sm:hidden" /> for all your hardware.
+      Expert repair <br className="sm:hidden" /> for all your hardware.
     </h2>
   </div>
 
   {/* Perfect 6 cards grid for laptop 3-3 and for mobile column grid*/}
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
     
-    {/* 1. NEW CARD: CHIPSET LEVEL REPAIR */}
+    {/* 1. NEW CARD: CHIPSET LEVEL repairs */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
       <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
  <Image
     src="/images/microSoldering.webp"
-    alt="Chipset Repair microSoldering"
+    alt="Chipset repairs microSoldering"
     fill
     sizes="(max-width: 768px) 100vw, 33vw"
     className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
@@ -297,53 +297,53 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
   </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
         <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">
-          Chipset Level Repair for All Devices
+          Chipset Level repairs for All Devices
         </h3>
         <p className="text-[14px] text-black leading-[1.4]">
-          Micro-soldering, IC reballing, logic board trace repairs, and short-circuit troubleshooting for phones, macbooks, and smart gear.
+          Micro-soldering, IC reballing, logic board trace and repairs, and short-circuit troubleshooting for phones, macbooks, and smart gear.
         </p>
       </div>
     </div>
 
-    {/* 2. Mobile Repair */}
+    {/* 2. Mobile repairs */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
       <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
 <Image
     src="/images/phoneRepair.webp"
-    alt="Mobile repair"
+    alt="Mobile repairs"
     fill
     sizes="(max-width: 768px) 100vw, 33vw"
     className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
   />          </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
-        <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">Smartphone Restoration</h3>
+        <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">Smartphone repair</h3>
         <p className="text-[14px] text-black leading-[1.4]">From cracked outer glass layer calibration to precise OLED replacements and battery health diagnostics.</p>
       </div>
     </div>
 
-    {/* 3. Laptop Repair */}
+    {/* 3. Laptop repairs */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
       <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
         <Image
           src="/images/macBook.webp"
-          alt="Laptop Repair"
+          alt="Laptop repairs"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
         />
       </div>
       <div className="p-6 sm:p-8 text-center md:text-left space-y-2">
-        <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">Laptop & MacBook Care</h3>
+        <h3 className="text-[18px] sm:text-[22px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">Laptop Care</h3>
         <p className="text-[14px] text-black leading-[1.4]">Chip-level motherboard fixing, cracked display panels replacement, fluid damage recovery, and keyboard overhauls.</p>
       </div>
     </div>
 
-    {/* 4. LED TV Repair */}
+    {/* 4. LED TV repairs */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
       <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
         <Image
           src="/images/led.webp"
-          alt="LED TV Repair"
+          alt="LED TV repairs"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
@@ -355,12 +355,12 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
       </div>
     </div>
 
-    {/* 5. Mirrorless Camera Repair */}
+    {/* 5. Mirrorless Camera repairs */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
       <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
         <Image
           src="/images/camera.webp"
-          alt="Camera Repair"
+          alt="Camera repairs"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
@@ -372,12 +372,12 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
       </div>
     </div>
 
-    {/* 6. CCTV Repair */}
+    {/* 6. CCTV repairs */}
     <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] group hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300">
       <div className="w-full aspect-[16/10] bg-[#f5f5f7] overflow-hidden relative">
         <Image
           src="/images/cctvRepair.webp"
-          alt="CCTV Repair"
+          alt="CCTV repairs"
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover pointer-events-none transition-transform duration-500 group-hover:scale-105"
@@ -405,21 +405,21 @@ Delhi's premium multi-brand repair workshop for laptops, mobiles and other elect
     {/* FAQ Item 1 */}
     <div className="border-b border-black/[0.08] pb-4 group">
       <h3 className="text-[16px] sm:text-[18px] font-medium text-[#1d1d1f] py-3 flex justify-between items-center cursor-pointer select-none">
-        Will my data be safe during repair?
+        Will my data be safe during repairs?
         <span className="text-amber-600"><ArrowLeft/></span>
       </h3>
       <p className="text-[14px] sm:text-[15px] text-black leading-relaxed max-w-2xl">
-Absolutely. Data privacy is the core engine at ChipsetFix.com. All hardware diagnostics, screen restorations, and chip-level micro-soldering are physically isolated from your storage modules. Whether it is a MacBook logic board, flagship phone, or camera, your internal files and operating system remain 100% untouched and secure throughout the entire service cycle.</p>
+Absolutely. Data privacy is the core engine at ChipsetFix.com. All hardware diagnostics, screen repairs, and chip-level micro-soldering are physically isolated from your storage modules. Whether it is a MacBook logic board, flagship phone, or camera, your internal files and operating system remain 100% untouched and secure throughout the entire service cycle.</p>
     </div>
 
     {/* FAQ Item 2 */}
     <div className="border-b border-black/[0.08] pb-4 group">
       <h3 className="text-[16px] sm:text-[18px] font-medium text-[#1d1d1f] py-3 flex justify-between items-center cursor-pointer select-none">
-        What types of electronics devices do you repair, and how do I get a price estimate for my specific hardware model?
+        What types of electronics devices do you fix, and how do I get a price estimate for my specific hardware model?
         <span className="text-amber-600"><ArrowLeft/></span>
       </h3>
       <p className="text-[14px] sm:text-[15px] text-black leading-relaxed max-w-2xl">
-ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagship phones, DSLR cameras, and 4K TVs. Just submit your brand and model via our WhatsApp form below. Using real-time diagnostic schematics, our desk will send you a transparent, component-level repair estimate within 15 minutes.      </p>
+ChipsetFix is a premium multi-brand restore workshop for laptops, flagship phones, DSLR cameras, and 4K TVs. Just submit your brand and model via our WhatsApp form below. Using real-time diagnostic schematics, our desk will send you a transparent, component-level repairs estimate within 15 minutes.      </p>
     </div>
   </div>
 </section>
@@ -458,7 +458,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
     </div>
   </div>
 
-  {/* ---------------- CARD 2: Same-Day Repair (Animated Bolt/Clock) ---------------- */}
+  {/* ---------------- CARD 2: Same-Day repairs (Animated Bolt/Clock) ---------------- */}
   <div className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-black/[0.03] md:hover:shadow-[0_12px_40px_rgba(0,0,0,0.08)] transition-all duration-300 group select-none touch-manipulation">
     <div className="w-full aspect-[16/10] bg-[#f5f5f7] flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
@@ -474,7 +474,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
     
     <div className="p-6 sm:p-8 flex flex-col justify-center text-center md:text-left space-y-3">
       <h3 className="text-[20px] sm:text-[24px] font-semibold tracking-[-0.015em] text-[#1d1d1f]">
-        Same-Day Repair
+        Same-Day repairs
       </h3>
       <p className="text-[14px] sm:text-[15px] text-black leading-[1.4] tracking-[-0.01em] font-normal">
         Don't wait for days. Drop off your device and collect it within hours, perfectly sealed and fully tested.
@@ -502,7 +502,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
         Warranty Protection
       </h3>
       <p className="text-[14px] sm:text-[15px] text-black leading-[1.4] tracking-[-0.01em] font-normal">
-        Every screen restoration comes with a rock-solid warranty covering any structural or touch manufacturing defects.
+        Every screen repair comes with a rock-solid warranty covering any structural or touch manufacturing defects.
       </p>
     </div>
   </div>
@@ -526,11 +526,11 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
     {/* SEO Q1: Local Keyword & Trust */}
     <div className="border-b border-black/[0.08] pb-4 group">
       <h3 className="text-[16px] sm:text-[18px] font-medium text-[#1d1d1f] py-3 flex justify-between items-center cursor-pointer select-none">
-        Which is the best premium device repair shop in Rohini, Delhi?
+        Which is the best premium device repairs shop in Rohini, Delhi?
         <span className="text-amber-600"><ArrowLeft/></span>
       </h3>
       <p className="text-[14px] sm:text-[15px] text-black leading-relaxed max-w-2xl">
-        ChipsetFix is widely recognized as one of the leading multi-brand repair centers in Rohini, New Delhi. We specialize in advanced chipset-level micro-soldering, MacBook logic board restoration, mirrorless camera cleaning, and high-precision smartphone outer glass layer replacement.
+        ChipsetFix is widely recognized as one of the leading multi-brand repairs centers in Rohini, New Delhi. We specialize in advanced chipset-level micro-soldering, MacBook logic board repair, mirrorless camera cleaning, and high-precision smartphone outer glass layer replacement.
       </p>
     </div>
 
@@ -541,7 +541,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
         <span className="text-amber-600"><ArrowLeft/></span>
       </h3>
       <p className="text-[14px] sm:text-[15px] text-black leading-relaxed max-w-2xl">
-        The cost of glass restoration depends strictly on your device model. By replacing only the shattered outer glass layer using OCA vacuum lamination instead of the entire expensive display assembly, we save you up to 60% compared to official service center prices while retaining your original screen.
+        The cost of glass repair depends strictly on your device model. By replacing only the shattered outer glass layer using OCA vacuum lamination instead of the entire expensive display assembly, we save you up to 60% compared to official service center prices while retaining your original screen.
       </p>
     </div>
 
@@ -558,11 +558,11 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
     {/* SEO Q4: Data & Safety (High search volume intent) */}
     <div className="border-b border-black/[0.08] pb-4 group">
       <h3 className="text-[16px] sm:text-[18px] font-medium text-[#1d1d1f] py-3 flex justify-between items-center cursor-pointer select-none">
-        Will my phone data remain safe during hardware chipset repair?
+        Will my phone data remain safe during hardware chipset repairs?
         <span className="text-amber-600"><ArrowLeft/></span>
       </h3>
       <p className="text-[14px] sm:text-[15px] text-black leading-relaxed max-w-2xl">
-        Data privacy is our top priority. Our hardware repairs—whether glass lamination, backlight fixes, or IC reballing—are completely isolated from your device's flash memory storage. Your data remains untouched and 100% safe throughout the restoration process.
+        Data privacy is our top priority. Our hardware repairs—whether glass lamination, backlight fixes, or IC reballing—are completely isolated from your device's flash memory storage. Your data remains untouched and 100% safe throughout the repair process.
       </p>
     </div>
 
@@ -577,7 +577,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
     {/* Form Left Side: Marketing Context */}
     <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
       <h2 className="text-[28px] sm:text-[36px] font-semibold tracking-[-0.022em] text-[#1d1d1f] leading-tight">
-        Schedule your <br className="hidden md:inline" /> repair today.
+        Schedule your <br className="hidden md:inline" /> repairs today.
       </h2>
       <p className="text-[15px] text-black font-normal leading-relaxed">
         Fill out this brief form, and our support team will contact you within 15 minutes to confirm your priority time slot.
@@ -643,7 +643,7 @@ ChipsetFix is a premium multi-brand workshop for Apple MacBooks, laptops, flagsh
           ChipsetFix<span className="text-amber-600 font-bold">.</span>
         </span>
         <p className="text-[14px] text-black leading-[1.5] font-normal">
-          Delhi's premier multi-brand hardware restoration workshop. Specializing in high-precision chipset micro-soldering, screen lamination, and premium diagnostic care.
+          Delhi's premier multi-brand hardware repair workshop. Specializing in high-precision chipset micro-soldering, screen lamination, and premium diagnostic care.
         </p>
       </div>
 
